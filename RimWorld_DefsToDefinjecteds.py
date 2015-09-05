@@ -1,6 +1,7 @@
 import os
 import sys
 import xml.etree.ElementTree as ETree
+from tkinter import filedialog
 
 __author__ = 'Sakuukuli'
 
@@ -93,12 +94,9 @@ if len(arguments) == 2:
     defsDirPath = arguments[0]
     translationDirPath = arguments[1]
 # If incorrect number of arguments then print help
-elif len(arguments) == 0:
-    printhelp()
-    sys.exit(2)
 else:
-    printhelperror()
-    sys.exit(2)
+    defsDirPath = filedialog.askdirectory(title="Choose a RimWorld installation directory, then select OK.")
+    translationDirPath = filedialog.askdirectory(title="Choose a directory where the templates will be created, then select OK.")
 
 # Print information about the script
 print("--------------------------------------------------------------------")
@@ -110,20 +108,17 @@ print("--------------------------------------------------------------------")
 print("")
 
 # Move to the directories where the files are
-defsDirPath += '\\Mods\\Core\\Defs'
-translationDirPath += '\\DefInjected'
+if not defsDirPath:
+    print("Invalid RimWorld installation folder.")
+    sys.exit(2)
+else:
+    defsDirPath += '\\Mods\\Core\\Defs'
 
-# Define list of labels that need to be translated
-labels = ['label', 'labelMechanoids', 'labelMale', 'labelFemale', 'labelShort', 'skillLabel', 'description', 'pawnLabel', 'gerundLabel', 'reportString', 'verb', 'gerund',
-          'deathMessage', 'pawnsPlural', 'jobString', 'quotation', 'beginLetterLabel', 'beginLetter', 'recoveryMessage',
-          'inspectLine', 'graphLabelY', 'fixedName', 'letterLabel', 'letterText',
-          'letterLabelEnemy', 'arrivalTextEnemy', 'letterLabelFriendly', 'arrivalTextFriendly', 'Description']
-nestedstartlabels = ['injuryProps']
-nestedlabels = ['destroyedLabel', 'destroyedOutLabel']
-liststartlabels = ['helpTexts', 'comps', 'stages', 'degreeDatas', 'rulePack', 'lifeStages']
-nestedliststartlabels = ['rulesStrings']
-listlabels = ['label', 'description', 'labelTreatedWell', 'labelTreated', 'labelTreatedWellInner', 'labelTreatedInner',
-              'labelSolidTreatedWell', 'labelSolidTreated', 'oldLabel']
+if not translationDirPath:
+    print("Invalid template folder.")
+    sys.exit(2)
+else:
+    translationDirPath += '\\DefInjected'
 
 # Check if the entered RimWorld installation folder was correct
 if not os.path.exists(defsDirPath):
@@ -132,6 +127,19 @@ if not os.path.exists(defsDirPath):
 else:
     print("Valid installation folder.")
     print("")
+
+# Define list of labels that need to be translated
+labels = ['label', 'labelMechanoids', 'labelMale', 'labelFemale', 'labelShort', 'skillLabel', 'description',
+          'pawnLabel', 'gerundLabel', 'reportString', 'verb', 'gerund', 'deathMessage', 'pawnsPlural', 'jobString',
+          'quotation', 'beginLetterLabel', 'beginLetter', 'recoveryMessage', 'inspectLine', 'graphLabelY', 'fixedName',
+          'letterLabel', 'letterText', 'letterLabelEnemy', 'arrivalTextEnemy', 'letterLabelFriendly',
+          'arrivalTextFriendly', 'Description']
+nestedstartlabels = ['injuryProps']
+nestedlabels = ['destroyedLabel', 'destroyedOutLabel']
+liststartlabels = ['helpTexts', 'comps', 'stages', 'degreeDatas', 'rulePack', 'lifeStages']
+nestedliststartlabels = ['rulesStrings']
+listlabels = ['label', 'description', 'labelTreatedWell', 'labelTreated', 'labelTreatedWellInner', 'labelTreatedInner',
+              'labelSolidTreatedWell', 'labelSolidTreated', 'oldLabel']
 
 # Create the translation folder
 if not os.path.exists(translationDirPath):
@@ -227,7 +235,8 @@ for dirpath, dirnames, filenames in os.walk(defsDirPath):
                     roughnesslist = [('Rough', 'rough'), ('RoughHewn', 'rough-hewn'), ('Smooth', 'smooth')]
                     for stone in stonelist:
                         for roughness in roughnesslist:
-                            writedeflabel(defInjectFile, stone + '_' + roughness[0], 'label', roughness[1] + ' ' + stone.lower())
+                            writedeflabel(defInjectFile, stone + '_' + roughness[0], 'label',
+                                          roughness[1] + ' ' + stone.lower())
 
                         defInjectFile.write('    \n')
 
@@ -258,7 +267,8 @@ for dirpath, dirnames, filenames in os.walk(defsDirPath):
                                     # If the list element has no children, it has the text to translate in itself
                                     if len(list(listelement)) == 0:
                                         # Write the path replacement syntax to the file
-                                        writepathreplace(defInjectFile, defName, liststartlabel + '.' + str(i), listelement.text)
+                                        writepathreplace(defInjectFile, defName, liststartlabel + '.' + str(i),
+                                                         listelement.text)
                                     else:
                                         # Go through the in-list labels
                                         for listlabel in listlabels:
@@ -267,7 +277,8 @@ for dirpath, dirnames, filenames in os.walk(defsDirPath):
                                                 # Store the label tag
                                                 listsubelement = listelement.find(listlabel)
                                                 # Write the path replacement syntax to the file
-                                                writepathreplace(defInjectFile, defName, liststartlabel + '.' + str(i) + '.' + listsubelement.tag, listsubelement.text)
+                                                writepathreplace(defInjectFile, defName, liststartlabel + '.' + str(
+                                                    i) + '.' + listsubelement.tag, listsubelement.text)
                         else:
                             for nestedliststartlabel in nestedliststartlabels:
                                 nestedliststart = liststart.find(nestedliststartlabel)
@@ -278,7 +289,9 @@ for dirpath, dirnames, filenames in os.walk(defsDirPath):
                                             # If the list element has no children, it has the text to translate in itself
                                             if len(list(nestedlistelement)) == 0:
                                                 # Write the path replacement syntax to the file
-                                                writepathreplace(defInjectFile, defName, liststartlabel + '.' + nestedliststartlabel + '.' + str(i), nestedlistelement.text)
+                                                writepathreplace(defInjectFile, defName,
+                                                                 liststartlabel + '.' + nestedliststartlabel + '.' + str(
+                                                                     i), nestedlistelement.text)
 
                 for nestedstartlabel in nestedstartlabels:
                     nestedstart = child.find(nestedstartlabel)
@@ -286,24 +299,30 @@ for dirpath, dirnames, filenames in os.walk(defsDirPath):
                         for nestedlabel in nestedlabels:
                             nestedelement = nestedstart.find(nestedlabel)
                             if nestedelement is not None:
-                                writepathreplace(defInjectFile, defName, nestedstartlabel + '.' + nestedelement.tag, nestedelement.text)
+                                writepathreplace(defInjectFile, defName, nestedstartlabel + '.' + nestedelement.tag,
+                                                 nestedelement.text)
                 if child.get('ParentName') in ['BasePawn', 'BaseAnimal', 'BaseMechanoid']:
                     labelElement = child.find('label')
                     if defName not in ['Chicken', 'Megascarab', 'Mechanoid_Centipede', 'Mechanoid_Scyther']:
                         writedeflabel(defInjectFile, defName + '_Leather', 'label', labelElement.text + ' leather')
-                        writedeflabel(defInjectFile, defName + '_Leather', 'description', 'Leather made from the skin of a ' + labelElement.text + '.')
+                        writedeflabel(defInjectFile, defName + '_Leather', 'description',
+                                      'Leather made from the skin of a ' + labelElement.text + '.')
                     if defName not in ['Mechanoid_Centipede', 'Mechanoid_Scyther']:
                         writedeflabel(defInjectFile, defName + '_Meat', 'label', labelElement.text + ' meat')
-                        writedeflabel(defInjectFile, defName + '_Meat', 'description', 'Raw flesh of a ' + labelElement.text + '.')
+                        writedeflabel(defInjectFile, defName + '_Meat', 'description',
+                                      'Raw flesh of a ' + labelElement.text + '.')
                     writedeflabel(defInjectFile, defName + '_Corpse', 'label', labelElement.text + ' corpse')
-                    writedeflabel(defInjectFile, defName + '_Corpse', 'description', 'Dead body of a ' + labelElement.text + '.')
+                    writedeflabel(defInjectFile, defName + '_Corpse', 'description',
+                                  'Dead body of a ' + labelElement.text + '.')
                 if child.get('ParentName') == 'StoneBlocksBase':
                     labelElement = child.find('label')
                     writedeflabel(defInjectFile, defName, 'stuffProps.stuffAdjective', labelElement.text[:-7])
                 if child.get('ParentName') == 'TileStoneBase':
-                    writedeflabel(defInjectFile, defName, 'description', 'Solid stone tiles for a castle feeling. Pretty to look at, but they take a long time to lay.')
+                    writedeflabel(defInjectFile, defName, 'description',
+                                  'Solid stone tiles for a castle feeling. Pretty to look at, but they take a long time to lay.')
                 if child.get('ParentName') == 'TableBase':
-                    writedeflabel(defInjectFile, defName, 'description', 'People eat off tables when chairs are placed facing them.')
+                    writedeflabel(defInjectFile, defName, 'description',
+                                  'People eat off tables when chairs are placed facing them.')
                 if child.get('ParentName') == 'ResourceBase':
                     if child.find('stuffProps') is not None:
                         labelElement = child.find('label')
@@ -326,3 +345,4 @@ print("")
 print("")
 
 print("Successfully processed all files.")
+
