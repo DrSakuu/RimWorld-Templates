@@ -112,13 +112,13 @@ if not defsDirPath:
     print("Invalid RimWorld installation folder.")
     sys.exit(2)
 else:
-    defsDirPath += '\\Mods\\Core\\Defs'
+    defsDirPath = os.path.join(defsDirPath, 'Mods', 'Core', 'Defs')
 
 if not translationDirPath:
     print("Invalid template folder.")
     sys.exit(2)
 else:
-    translationDirPath += '\\DefInjected'
+    translationDirPath = os.path.join(translationDirPath, 'DefInjected')
 
 # Check if the entered RimWorld installation folder was correct
 if not os.path.exists(defsDirPath):
