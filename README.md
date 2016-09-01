@@ -3,7 +3,8 @@ RimWorld-Templates
 
 A list of translate-ready files in the correct syntax.
 
-__Updated for alpha 14!__
+Updated for alpha 14.
+For alpha 15 tags, check here: https://ludeon.com/forums/index.php?topic=24936.0
 
 I generated them using a python script so there may be things missing or incorrect. I was more safe than sorry, so I made sure these templates don't generate any errors in game.
 
