@@ -275,13 +275,13 @@ for dirpath, dirnames, filenames in os.walk(defsDirPath):
                 if child.get('ParentName') == 'Bite':
                     labelList.append(('deathMessage', '{0} has been bitten to death.'))
 
-                if defName == 'CarpetDark':
-                    stonelist = ['Sandstone', 'Granite', 'Limestone', 'Slate', 'Marble']
-                    roughnesslist = [('Rough', 'rough'), ('RoughHewn', 'rough-hewn'), ('Smooth', 'smooth')]
-                    for stone in stonelist:
-                        for roughness in roughnesslist:
-                            extraDefList.append((stone + '_' + roughness[0],
-                                                 [('label', roughness[1] + ' ' + stone.lower())]))
+                # if defName == 'CarpetDark':
+                #     stonelist = ['Sandstone', 'Granite', 'Limestone', 'Slate', 'Marble']
+                #     roughnesslist = [('Rough', 'rough'), ('RoughHewn', 'rough-hewn'), ('Smooth', 'smooth')]
+                #     for stone in stonelist:
+                #         for roughness in roughnesslist:
+                #             extraDefList.append((stone + '_' + roughness[0],
+                #                                  [('label', roughness[1] + ' ' + stone.lower())]))
 
                 defTypeDict[child.tag].append((defName, labelList))
                 defTypeDict[child.tag] += extraDefList
