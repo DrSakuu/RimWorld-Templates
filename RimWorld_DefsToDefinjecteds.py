@@ -81,7 +81,7 @@ translationDirPath = os.path.join(translationDirPath, 'DefInjected')
 # Define list of labels that need to be translated
 labels = ['label', 'labelMechanoids', 'labelMale', 'labelFemale', 'labelShort', 'skillLabel', 'description',
           'adjective', 'pawnLabel', 'gerundLabel', 'reportString', 'verb', 'gerund', 'deathMessage', 'pawnsPlural',
-          'leaderTitle', 'jobString', 'quotation', 'beginLetterLabel', 'beginLetter', 'recoveryMessage', 'inspectLine',
+          'leaderTitle', 'jobString', 'quotation', 'beginLetterLabel', 'beginLetter', 'recoveryMessage', 'baseInspectLine',
           'graphLabelY', 'fixedName', 'letterLabel', 'letterText', 'letterLabelEnemy', 'arrivalTextEnemy',
           'letterLabelFriendly', 'arrivalTextFriendly', 'Description', 'endMessage', 'successfullyRemovedHediffMessage']
 nestedstartlabels = ['injuryProps']
@@ -164,7 +164,7 @@ for dirpath, dirnames, filenames in os.walk(defsDirPath):
             for child in defRoot:
                 if child.tag not in defTypeDict.keys():
                     defTypeDict[child.tag] = []
-                defList = []
+                extraDefList = []
                 labelList = []
                 # Look for the defName of the Def
                 defElement = child.find('defName')
@@ -209,7 +209,7 @@ for dirpath, dirnames, filenames in os.walk(defsDirPath):
                                                 # Store the label tag
                                                 listsubelement = listelement.find(listlabel)
                                                 labelList.append((liststartlabel + '.' + str(i)
-                                                                  + '.' + listsubelement.tag, listelement.text))
+                                                                  + '.' + listsubelement.tag, listsubelement.text))
                         else:
                             for nestedliststartlabel in nestedliststartlabels:
                                 nestedliststart = liststart.find(nestedliststartlabel)
@@ -243,7 +243,7 @@ for dirpath, dirnames, filenames in os.walk(defsDirPath):
                         extraLabelList = [('label', leatherLabel),
                                                ('description', 'Leather made from the skin of a ' + labelElement.text + '.'),
                                                ('stuffProps.stuffAdjective', leatherLabel)]
-                        defList.append((defName, extraLabelList))
+                        extraDefList.append((defName + '_Leather', extraLabelList))
                     if defName not in ['Mechanoid_Centipede', 'Mechanoid_Scyther']:
                         if child.find('race').find('meatLabel') is not None:
                             meatLabel = child.find('race').find('meatLabel').text
@@ -251,10 +251,10 @@ for dirpath, dirnames, filenames in os.walk(defsDirPath):
                             meatLabel = labelElement.text + ' meat'
                         extraLabelList = [('label', meatLabel),
                                                ('description', 'Raw flesh of a ' + labelElement.text + '.')]
-                        defList.append((defName, extraLabelList))
+                        extraDefList.append((defName + '_Meat', extraLabelList))
                     extraLabelList = [('label', labelElement.text + ' corpse'),
                                            ('description', 'Dead body of a ' + labelElement.text + '.')]
-                    defList.append((defName, extraLabelList))
+                    extraDefList.append((defName + '_Corpse', extraLabelList))
 
                 if child.get('ParentName') == 'StoneBlocksBase':
                     labelElement = child.find('label')
@@ -280,36 +280,49 @@ for dirpath, dirnames, filenames in os.walk(defsDirPath):
                     roughnesslist = [('Rough', 'rough'), ('RoughHewn', 'rough-hewn'), ('Smooth', 'smooth')]
                     for stone in stonelist:
                         for roughness in roughnesslist:
-                            defList.append((stone + '_' + roughness[0],
-                                            [('label', roughness[1] + ' ' + stone.lower())]))
+                            extraDefList.append((stone + '_' + roughness[0],
+                                                 [('label', roughness[1] + ' ' + stone.lower())]))
 
                 defTypeDict[child.tag].append((defName, labelList))
+                defTypeDict[child.tag] += extraDefList
 
             for defType in defTypeDict.keys():
-                # Create the directory in the translationDir if it doesn't exist
-                if not os.path.exists(os.path.join(translationDirPath, defType)):
-                    os.mkdir(os.path.join(translationDirPath, defType))
 
-                # Open the file for writing
-                defInjectFile = open(os.path.join(translationDirPath, defType, filename), 'w+',
-                                     encoding="utf-8")
+                if defTypeDict[defType]:
+                    # Create the directory in the translationDir if it doesn't exist
+                    if not os.path.exists(os.path.join(translationDirPath, defType)):
+                        os.mkdir(os.path.join(translationDirPath, defType))
 
-                # Write the header of the file
-                writeheader(defInjectFile)
+                    # Open the file for writing
+                    if os.path.exists(os.path.join(translationDirPath, defType, filename)):
+                        defInjectFile = open(os.path.join(translationDirPath, defType, filename), 'a',
+                                             encoding="utf-8")
+                    else:
+                        defInjectFile = open(os.path.join(translationDirPath, defType, filename), 'w',
+                                             encoding="utf-8")
 
-                for defName, labelList in defTypeDict[defType]:
-                    for label, text in labelList:
-                        writedeflabel(defInjectFile, defName, label, text)
-                    defInjectFile.write('    \n')
+                    # Write the header of the file
+                    writeheader(defInjectFile)
 
-                # Clean up after parsing the file
-                # Write the end of the xml file
-                writefooter(defInjectFile)
-                # Close the translatable file
-                defInjectFile.close()
+                    for defName, labelList in defTypeDict[defType]:
+                        for label, text in labelList:
+                            writedeflabel(defInjectFile, defName, label, text)
+                        defInjectFile.write('    \n')
+
+                    # Close the translatable file
+                    defInjectFile.close()
 
         processedfiles += 1
         rwtutil.print_progress("Collecting tags", processedfiles, numfiles)
+
+for dirpath, dirnames, filenames in os.walk(translationDirPath):
+
+    for filename in [f for f in filenames if f.endswith('.xml')]:
+        defInjectFile = open(os.path.join(dirpath, filename), 'a',
+                             encoding="utf-8")
+        writefooter(defInjectFile)
+        # Close the translatable file
+        defInjectFile.close()
 
 print("")
 print("")
