@@ -11,11 +11,9 @@
     <Lynx.description>A wildcat larger than a housecat, but smaller than a cougar. Lynxes survive on a diet of small birds and animals. Their very warm fur keeps them safe from the brutally cold temperatures of their northern territories.</Lynx.description>
     
     <Lynx_Leather.label>lynxskin</Lynx_Leather.label>
-    <Lynx_Leather.description>Leather made from the skin of a lynx.</Lynx_Leather.description>
     <Lynx_Leather.stuffProps.stuffAdjective>lynxskin</Lynx_Leather.stuffProps.stuffAdjective>
     
     <Lynx_Meat.label>lynx meat</Lynx_Meat.label>
-    <Lynx_Meat.description>Raw flesh of a lynx.</Lynx_Meat.description>
     
     <Lynx_Corpse.label>lynx corpse</Lynx_Corpse.label>
     <Lynx_Corpse.description>Dead body of a lynx.</Lynx_Corpse.description>
