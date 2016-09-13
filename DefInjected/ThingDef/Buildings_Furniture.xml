@@ -58,6 +58,9 @@
     <StandingLamp_Blue.label>standing lamp (blue)</StandingLamp_Blue.label>
     <StandingLamp_Blue.description>Standing lamp that lights an area in blue.</StandingLamp_Blue.description>
     
+    <SunLamp.label>sun lamp</SunLamp.label>
+    <SunLamp.description>Lights an area brightly enough to grow crops, but consumes a huge amount of power.</SunLamp.description>
+    
     <EquipmentRack.label>equipment rack</EquipmentRack.label>
     <EquipmentRack.description>Items stored in this will not deteriorate, even if outside.</EquipmentRack.description>
     

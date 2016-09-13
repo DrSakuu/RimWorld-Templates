@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
     
-    <BrewBeer.label>brew beer</BrewBeer.label>
-    <BrewBeer.description>Brew a batch of beer from hops.</BrewBeer.description>
-    <BrewBeer.jobString>Brewing beer.</BrewBeer.jobString>
+    <MakeWort.label>make wort</MakeWort.label>
+    <MakeWort.description>Make wort from hops.</MakeWort.description>
+    <MakeWort.jobString>Making wort.</MakeWort.jobString>
+    
+    <BurnDrugs.label>burn drugs</BurnDrugs.label>
+    <BurnDrugs.description>Burn drugs to completely destroy them.</BurnDrugs.description>
+    <BurnDrugs.jobString>Burning drugs.</BurnDrugs.jobString>
     
 </LanguageData>

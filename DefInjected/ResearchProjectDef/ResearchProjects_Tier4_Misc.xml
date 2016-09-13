@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
     
+    <GroundPenetratingScanner.label>ground-penetrating scanner</GroundPenetratingScanner.label>
+    <GroundPenetratingScanner.description>Allows you to build ground-penetrating scanners that can detect drillable resources deep under the surface.</GroundPenetratingScanner.description>
+    
+    <DeepDrilling.label>deep drilling</DeepDrilling.label>
+    <DeepDrilling.description>Allows you to build deep drills for extracting resources from deep underground. You'll need a ground-penetrating scanner to find the resources.</DeepDrilling.description>
+    
     <VitalsMonitor.label>vitals monitor</VitalsMonitor.label>
     <VitalsMonitor.description>Allows colonists to build vitals monitors which increase patients treatment quality if placed next to medical beds.</VitalsMonitor.description>
     

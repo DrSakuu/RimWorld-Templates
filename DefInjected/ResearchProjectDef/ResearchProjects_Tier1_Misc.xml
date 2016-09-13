@@ -4,6 +4,9 @@
     <Pemmican.label>pemmican</Pemmican.label>
     <Pemmican.description>Make pemmican, a preserved mixture of meat and plant matter that doesn't go bad for a long time. Great for traveling.</Pemmican.description>
     
+    <PassiveCooler.label>passive cooler</PassiveCooler.label>
+    <PassiveCooler.description>Make passive coolers, a way to cool indoor spaces without using electricity.</PassiveCooler.description>
+    
     <Devilstrand.label>devilstrand</Devilstrand.label>
     <Devilstrand.description>Allows colonists to plant devilstrand, a slow-growing mushroom that yields a valuable plant fiber.</Devilstrand.description>
     
@@ -24,5 +27,8 @@
     
     <Electricity.label>electricity</Electricity.label>
     <Electricity.description>Generate and use electricity for cooking and other simple tasks.</Electricity.description>
+    
+    <DrugProduction.label>drug production</DrugProduction.label>
+    <DrugProduction.description>The basics of drug preparation and synthesis. Allows creation of the drug lab. Further research is required to make specific drugs.</DrugProduction.description>
     
 </LanguageData>

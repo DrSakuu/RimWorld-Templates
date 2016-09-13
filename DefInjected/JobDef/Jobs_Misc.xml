@@ -40,6 +40,10 @@
     
     <Refuel.reportString>refueling TargetA.</Refuel.reportString>
     
+    <FillFermentingBarrel.reportString>filling TargetA.</FillFermentingBarrel.reportString>
+    
+    <TakeBeerOutOfFermentingBarrel.reportString>taking beer out of TargetA.</TakeBeerOutOfFermentingBarrel.reportString>
+    
     <ManTurret.reportString>operating turret.</ManTurret.reportString>
     
     <EnterCryptosleepCasket.reportString>entering cryptosleep casket.</EnterCryptosleepCasket.reportString>

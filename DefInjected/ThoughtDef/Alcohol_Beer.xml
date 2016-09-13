@@ -20,4 +20,7 @@
     <Hungover.stages.2.description>It feels like a gaggle of geese are pecking at my skull.</Hungover.stages.2.description>
     <Hungover.stages.3.label>hungover-hidden</Hungover.stages.3.label>
     
+    <AlcoholWithdrawal.stages.1.label>alcohol withdrawal</AlcoholWithdrawal.stages.1.label>
+    <AlcoholWithdrawal.stages.1.description>Feeling shaky. Everything pisses me off. I keep thinking of drinking.</AlcoholWithdrawal.stages.1.description>
+    
 </LanguageData>

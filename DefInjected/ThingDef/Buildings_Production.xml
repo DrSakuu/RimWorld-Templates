@@ -37,6 +37,9 @@
     <Brewery.label>brewery</Brewery.label>
     <Brewery.description>A work station with all the equipment needed to brew beer.</Brewery.description>
     
+    <DrugLab.label>drug lab</DrugLab.label>
+    <DrugLab.description>A work bench equipped with various containers, heaters, and measurement equipment for producing a variety of drugs.</DrugLab.description>
+    
     <ElectricSmelter.label>electric smelter</ElectricSmelter.label>
     <ElectricSmelter.description>Extracts usable metal from slag chunks and other mixed metal items. Consumes a lot of power.</ElectricSmelter.description>
     
@@ -54,6 +57,12 @@
     
     <HydroponicsBasin.label>hydroponics basin</HydroponicsBasin.label>
     <HydroponicsBasin.description>Grows plants quickly in an artificial nutrient bath. Requires power to work; plants will die if power is cut.</HydroponicsBasin.description>
+    
+    <FermentingBarrel.label>fermenting barrel</FermentingBarrel.label>
+    <FermentingBarrel.description>A barrel for fermenting raw wort into beer.</FermentingBarrel.description>
+    
+    <DeepDrill.label>deep drill</DeepDrill.label>
+    <DeepDrill.description>A deep-crust drilling rig for extracting minerals from deep under the surface. Use a ground-penetrating scanner to detect the resources.</DeepDrill.description>
     
     <NutrientPasteDispenser.label>nutrient paste dispenser</NutrientPasteDispenser.label>
     <NutrientPasteDispenser.description>Synthesizes nutrient paste from organic feedstocks. It consumes less ingredients and time than any other meal production method - but nobody likes eating nutrient paste. Accepts raw food, but not rough plant matter like hay.</NutrientPasteDispenser.description>
