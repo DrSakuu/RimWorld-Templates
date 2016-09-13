@@ -26,10 +26,10 @@
     <Gun_SniperRifle.label>sniper rifle</Gun_SniperRifle.label>
     <Gun_SniperRifle.description>Ancient pattern military sniper rifle. Bolt action. Long range, great accuracy and power.</Gun_SniperRifle.description>
     
-    <Bullet_PDW.label>PDW bullet</Bullet_PDW.label>
+    <Bullet_MachinePistol.label>Machine pistol bullet</Bullet_MachinePistol.label>
     
-    <Gun_PDW.label>PDW</Gun_PDW.label>
-    <Gun_PDW.description>A personal defense weapon is a micro-submachine gun. Short range, low power, high rate of fire. Very quick to aim and fire.</Gun_PDW.description>
+    <Gun_MachinePistol.label>Machine pistol</Gun_MachinePistol.label>
+    <Gun_MachinePistol.description>A micro-submachine gun. Short range, low power, high rate of fire. Very quick to aim and fire.</Gun_MachinePistol.description>
     
     <Bullet_HeavySMG.label>heavy SMG bullet</Bullet_HeavySMG.label>
     
@@ -50,11 +50,6 @@
     
     <Gun_ChargeRifle.label>charge rifle</Gun_ChargeRifle.label>
     <Gun_ChargeRifle.description>Charged-shot energy/projectile rifle.</Gun_ChargeRifle.description>
-    
-    <Bullet_TurretImprovised.label>improvised turret bullet</Bullet_TurretImprovised.label>
-    
-    <Gun_TurretImprovised.label>improvised turret gun</Gun_TurretImprovised.label>
-    <Gun_TurretImprovised.description>Jury-rigged gun attached to a turret.</Gun_TurretImprovised.description>
     
     <Bullet_Minigun.label>minigun bullet</Bullet_Minigun.label>
     

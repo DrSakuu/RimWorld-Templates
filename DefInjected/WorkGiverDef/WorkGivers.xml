@@ -101,10 +101,6 @@
     <DoBillsCookCampfire.verb>cook</DoBillsCookCampfire.verb>
     <DoBillsCookCampfire.gerund>cooking</DoBillsCookCampfire.gerund>
     
-    <DoBillsBrew.label>brew liquors</DoBillsBrew.label>
-    <DoBillsBrew.verb>brew</DoBillsBrew.verb>
-    <DoBillsBrew.gerund>brewing</DoBillsBrew.gerund>
-    
     <DoBillsButcherFlesh.label>butcher creatures</DoBillsButcherFlesh.label>
     <DoBillsButcherFlesh.verb>butcher</DoBillsButcherFlesh.verb>
     <DoBillsButcherFlesh.gerund>butchering at</DoBillsButcherFlesh.gerund>
@@ -112,6 +108,10 @@
     <CookFillHopper.label>fill food hoppers</CookFillHopper.label>
     <CookFillHopper.verb>fill</CookFillHopper.verb>
     <CookFillHopper.gerund>filling</CookFillHopper.gerund>
+    
+    <DoBillsBrew.label>brew liquors</DoBillsBrew.label>
+    <DoBillsBrew.verb>brew</DoBillsBrew.verb>
+    <DoBillsBrew.gerund>brewing</DoBillsBrew.gerund>
     
     <HunterHunt.label>hunt</HunterHunt.label>
     <HunterHunt.verb>hunt</HunterHunt.verb>
@@ -177,6 +177,10 @@
     <Mine.verb>mine</Mine.verb>
     <Mine.gerund>mining</Mine.gerund>
     
+    <Drill.label>drill</Drill.label>
+    <Drill.verb>drill</Drill.verb>
+    <Drill.gerund>drilling</Drill.gerund>
+    
     <PlantsCut.label>cut plants</PlantsCut.label>
     <PlantsCut.verb>cut</PlantsCut.verb>
     <PlantsCut.gerund>cutting</PlantsCut.gerund>
@@ -205,6 +209,10 @@
     <DoBillsUseCraftingSpot.verb>craft</DoBillsUseCraftingSpot.verb>
     <DoBillsUseCraftingSpot.gerund>crafting at</DoBillsUseCraftingSpot.gerund>
     
+    <DoBillsProduceDrugs.label>produce drugs</DoBillsProduceDrugs.label>
+    <DoBillsProduceDrugs.verb>produce drugs</DoBillsProduceDrugs.verb>
+    <DoBillsProduceDrugs.gerund>produce drugs at</DoBillsProduceDrugs.gerund>
+    
     <DoBillsStonecut.label>cut stone</DoBillsStonecut.label>
     <DoBillsStonecut.verb>stonecut</DoBillsStonecut.verb>
     <DoBillsStonecut.gerund>stonecutting at</DoBillsStonecut.gerund>
@@ -229,9 +237,21 @@
     <Open.verb>open</Open.verb>
     <Open.gerund>opening</Open.gerund>
     
+    <TakeBeerOutOfFermentingBarrel.label>take beer out of fermenting barrels</TakeBeerOutOfFermentingBarrel.label>
+    <TakeBeerOutOfFermentingBarrel.verb>take beer</TakeBeerOutOfFermentingBarrel.verb>
+    <TakeBeerOutOfFermentingBarrel.gerund>taking beer from</TakeBeerOutOfFermentingBarrel.gerund>
+    
+    <FillFermentingBarrel.label>fill fermenting barrels</FillFermentingBarrel.label>
+    <FillFermentingBarrel.verb>fill</FillFermentingBarrel.verb>
+    <FillFermentingBarrel.gerund>filling</FillFermentingBarrel.gerund>
+    
     <DoBillsCremate.label>do cremation bills</DoBillsCremate.label>
     <DoBillsCremate.verb>cremate</DoBillsCremate.verb>
     <DoBillsCremate.gerund>cremating at</DoBillsCremate.gerund>
+    
+    <DoBillsHaulCampfire.label>do bills at campfire</DoBillsHaulCampfire.label>
+    <DoBillsHaulCampfire.verb>work at</DoBillsHaulCampfire.verb>
+    <DoBillsHaulCampfire.gerund>working at</DoBillsHaulCampfire.gerund>
     
     <BuryCorpses.label>bury corpses</BuryCorpses.label>
     <BuryCorpses.verb>bury</BuryCorpses.verb>

@@ -71,8 +71,18 @@
     
     <DesignatorRotateRight.label>rotate right</DesignatorRotateRight.label>
     
-    <ToggleLog.label>toggle log</ToggleLog.label>
+    <TickOnce.label>tick once</TickOnce.label>
     
-    <DebugTickOnce.label>tick once (debug)</DebugTickOnce.label>
+    <ToggleGodMode.label>toggle god mode</ToggleGodMode.label>
+    
+    <ToggleDebugLog.label>toggle debug log</ToggleDebugLog.label>
+    
+    <ToggleDebugActionsMenu.label>toggle debug actions menu</ToggleDebugActionsMenu.label>
+    
+    <ToggleDebugLogMenu.label>toggle debug log menu</ToggleDebugLogMenu.label>
+    
+    <ToggleDebugInspector.label>toggle debug inspector</ToggleDebugInspector.label>
+    
+    <ToggleDebugSettingsMenu.label>toggle debug settings menu</ToggleDebugSettingsMenu.label>
     
 </LanguageData>

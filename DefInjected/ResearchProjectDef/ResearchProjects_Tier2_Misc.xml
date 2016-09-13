@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
     
+    <PsychiteRefining.label>psychite refining</PsychiteRefining.label>
+    <PsychiteRefining.description>Learn to refine psychoid leaves into flake and yayo, different forms of the euphoric drug psychite.</PsychiteRefining.description>
+    
+    <WakeUpProduction.label>wake-up production</WakeUpProduction.label>
+    <WakeUpProduction.description>Your chemists learn the formulas and techniques for synthesizing wake-up, a work performance-enhancing drug.</WakeUpProduction.description>
+    
+    <GoJuiceProduction.label>go-juice production</GoJuiceProduction.label>
+    <GoJuiceProduction.description>Learn to produce the synthetic combat-performance-enhancing drug go-juice.</GoJuiceProduction.description>
+    
+    <MalariBlockProduction.label>malari-block production</MalariBlockProduction.label>
+    <MalariBlockProduction.description>Learn to produce malari-block, a malaria prevention drug.</MalariBlockProduction.description>
+    
     <Batteries.label>batteries</Batteries.label>
     <Batteries.description>Build batteries for storing electricity.</Batteries.description>
     
@@ -17,10 +29,10 @@
     <Autodoors.description>Build autodoors which open to permit movement without slowing anyone down.</Autodoors.description>
     
     <Hydroponics.label>hydroponics</Hydroponics.label>
-    <Hydroponics.description>Allows you to build hydroponics tables to rapidly grow crops indoors regardless of the terrain or weather outside.</Hydroponics.description>
+    <Hydroponics.description>Allows you to build hydroponics basins to rapidly grow crops indoors regardless of the terrain or weather outside.</Hydroponics.description>
     
     <ElectricSmelting.label>electric smelting</ElectricSmelting.label>
-    <ElectricSmelting.description>Build electic smithy and smelters.\n\nThe electric smithy allows smithing items without fuel. The electric smelters uses heat and strong electromagnets to extract useful metal from slag chunks and other items.</ElectricSmelting.description>
+    <ElectricSmelting.description>Build electric smithy and smelters.\n\nThe electric smithy allows smithing items without fuel. The electric smelters uses heat and strong electromagnets to extract useful metal from slag chunks and other items.</ElectricSmelting.description>
     
     <ElectricCremation.label>electric cremation</ElectricCremation.label>
     <ElectricCremation.description>Build crematoriums which can vaporize unwanted corpses.</ElectricCremation.description>

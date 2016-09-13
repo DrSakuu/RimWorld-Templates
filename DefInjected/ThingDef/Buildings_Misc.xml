@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
     
-    <SunLamp.label>sun lamp</SunLamp.label>
-    <SunLamp.description>Lights an area brightly enough to grow crops.</SunLamp.description>
-    
     <OrbitalTradeBeacon.label>orbital trade beacon</OrbitalTradeBeacon.label>
     <OrbitalTradeBeacon.description>Required for orbital trading. You can only sell goods that are near an orbital trade beacon. Can be placed indoors.</OrbitalTradeBeacon.description>
     
     <CommsConsole.label>comms console</CommsConsole.label>
     <CommsConsole.description>Allows radio contact with remote traders as well as other factions for trade and diplomacy.</CommsConsole.description>
+    
+    <FirefoamPopper.label>firefoam popper</FirefoamPopper.label>
+    <FirefoamPopper.description>When touched by fire or triggered by hand, this pops and sprays a fire-extinguishing foam in a circular field around itself.</FirefoamPopper.description>
+    
+    <MoisturePump.label>moisture pump</MoisturePump.label>
+    <MoisturePump.description>Very slowly removes moisture from nearby terrain, converting marshes or shallow water into dry ground. Does not affect deep water.</MoisturePump.description>
+    
+    <GroundPenetratingScanner.label>ground-penetrating scanner</GroundPenetratingScanner.label>
+    <GroundPenetratingScanner.description>A downward-facing penetrating radar, combined with sonar and magnetic imagers, allows you to detect (but not identify) minerals buried deep under the surface. Requires a huge amount of electricity.</GroundPenetratingScanner.description>
     
     <MultiAnalyzer.label>multi-analyzer</MultiAnalyzer.label>
     <MultiAnalyzer.description>Increases research speed. Needs to be placed near hi-tech research bench. One research bench can be linked to only one multi-analyzer.</MultiAnalyzer.description>
@@ -18,12 +24,6 @@
     
     <ToolCabinet.label>tool cabinet</ToolCabinet.label>
     <ToolCabinet.description>Increases work speed. Needs to be placed near workbench. One workbench can be simultaneously linked to only two tools cabinets.</ToolCabinet.description>
-    
-    <FirefoamPopper.label>firefoam popper</FirefoamPopper.label>
-    <FirefoamPopper.description>When touched by fire or triggered by hand, this pops and sprays a fire-extinguishing foam in a circular field around itself.</FirefoamPopper.description>
-    
-    <MoisturePump.label>moisture pump</MoisturePump.label>
-    <MoisturePump.description>Very slowly removes moisture from nearby terrain, converting marshes or shallow water into dry ground. Does not affect deep water.</MoisturePump.description>
     
     <Grave.label>grave</Grave.label>
     <Grave.description>Place the dead in graves to give them a decent final resting place. Colonists will visit full graves to gain meditative joy.</Grave.description>

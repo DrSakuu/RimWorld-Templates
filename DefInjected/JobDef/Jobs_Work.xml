@@ -59,6 +59,8 @@
     
     <DoBill.reportString>doing bill at TargetA.</DoBill.reportString>
     
+    <OperateDeepDrill.reportString>drilling at TargetA.</OperateDeepDrill.reportString>
+    
     <Clean.reportString>cleaning TargetA.</Clean.reportString>
     
     <Research.reportString>researching.</Research.reportString>

@@ -35,7 +35,7 @@
     <GreenThumb.degreeDatas.0.description>NAME has a passion for gardening. HECAP gets a mood bonus for every plant HE sows.</GreenThumb.degreeDatas.0.description>
     
     <NightOwl.degreeDatas.0.label>night owl</NightOwl.degreeDatas.0.label>
-    <NightOwl.degreeDatas.0.description>NAME likes to work at night. HECAP gets a mood bonus if awake at night and mood loss if awake during the day.</NightOwl.degreeDatas.0.description>
+    <NightOwl.degreeDatas.0.description>NAME likes to be up during the night, and sleep during the day.\n\nHECAP gets a mood bonus if awake at night (23h-6h) and mood loss if awake during the day (11h-18h).</NightOwl.degreeDatas.0.description>
     
     <Greedy.degreeDatas.0.label>greedy</Greedy.degreeDatas.0.label>
     <Greedy.degreeDatas.0.description>NAME needs a really impressive bedroom. HECAP gets a mood loss if HE doesn't get what HE wants.</Greedy.degreeDatas.0.description>
@@ -44,7 +44,7 @@
     <Jealous.degreeDatas.0.description>For NAME, it's degrading to have a less impressive bedroom than someone else. HECAP gets a mood loss if any colonist has a more impressive bedroom.</Jealous.degreeDatas.0.description>
     
     <Ascetic.degreeDatas.0.label>ascetic</Ascetic.degreeDatas.0.label>
-    <Ascetic.degreeDatas.0.description>NAME prefers to live in asceticism. HECAP will be put in a poor mood if HE has a bedroom that's too impressive.</Ascetic.degreeDatas.0.description>
+    <Ascetic.degreeDatas.0.description>NAME prefers to live in asceticism. HECAP will be put in a poor mood if HE has a bedroom that's too impressive. HECAP also dislikes fancy food and prefers to eat raw - and raw food won't both HIM a bit.</Ascetic.degreeDatas.0.description>
     
     <Gay.degreeDatas.0.label>gay</Gay.degreeDatas.0.label>
     <Gay.degreeDatas.0.description>NAME is romantically attracted to people of HIS own gender.</Gay.degreeDatas.0.description>

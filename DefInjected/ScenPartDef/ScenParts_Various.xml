@@ -11,6 +11,8 @@
     
     <ForcedHediff.label>forced health condition</ForcedHediff.label>
     
+    <SetNeedLevel.label>set need level</SetNeedLevel.label>
+    
     <StartingResearch.label>start with research</StartingResearch.label>
     
     <MapCondition_Planetkiller.label>planetkiller weapon incoming</MapCondition_Planetkiller.label>
@@ -30,6 +32,8 @@
     <StatFactor.label>stat multiplier</StatFactor.label>
     
     <DisableIncident.label>disable incident</DisableIncident.label>
+    
+    <CreateIncident.label>create incident</CreateIncident.label>
     
     <Rule_DisallowBuilding.label>disallow building</Rule_DisallowBuilding.label>
     

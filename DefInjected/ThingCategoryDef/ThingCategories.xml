@@ -3,8 +3,6 @@
     
     <Root.label>root</Root.label>
     
-    <Resources.label>resources</Resources.label>
-    
     <Foods.label>foods</Foods.label>
     
     <FoodMeals.label>meals</FoodMeals.label>
@@ -29,7 +27,11 @@
     
     <Medicine.label>medicine</Medicine.label>
     
+    <Drugs.label>drugs</Drugs.label>
+    
     <ResourcesRaw.label>raw resources</ResourcesRaw.label>
+    
+    <PlantMatter.label>plant matter</PlantMatter.label>
     
     <StoneBlocks.label>stone blocks</StoneBlocks.label>
     
@@ -43,6 +45,12 @@
     
     <Artifacts.label>artifacts</Artifacts.label>
     
+    <BodyParts.label>body parts</BodyParts.label>
+    
+    <BodyPartsNatural.label>natural</BodyPartsNatural.label>
+    
+    <BodyPartsArtificial.label>artificial</BodyPartsArtificial.label>
+    
     <Weapons.label>weapons</Weapons.label>
     
     <WeaponsMelee.label>melee weapons</WeaponsMelee.label>
@@ -55,12 +63,6 @@
     
     <Headgear.label>headgear</Headgear.label>
     
-    <BodyParts.label>body parts</BodyParts.label>
-    
-    <BodyPartsNatural.label>natural</BodyPartsNatural.label>
-    
-    <BodyPartsArtificial.label>artificial</BodyPartsArtificial.label>
-    
     <Chunks.label>chunks</Chunks.label>
     
     <StoneChunks.label>stone chunks</StoneChunks.label>
@@ -70,6 +72,8 @@
     <CorpsesHumanlike.label>humanlike corpses</CorpsesHumanlike.label>
     
     <CorpsesAnimal.label>animal corpses</CorpsesAnimal.label>
+    
+    <CorpsesInsect.label>insect corpses</CorpsesInsect.label>
     
     <CorpsesMechanoid.label>mechanoid corpses</CorpsesMechanoid.label>
     
