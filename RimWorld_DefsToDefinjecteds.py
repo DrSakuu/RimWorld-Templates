@@ -79,13 +79,14 @@ defsDirPath = os.path.join(defsDirPath, 'Mods', 'Core', 'Defs')
 translationDirPath = os.path.join(translationDirPath, 'DefInjected')
 
 # Define list of labels that need to be translated
-labels = ['label', 'labelMechanoids', 'labelMale', 'labelFemale', 'labelShort', 'skillLabel', 'description',
-          'adjective', 'pawnLabel', 'gerundLabel', 'reportString', 'verb', 'gerund', 'deathMessage', 'pawnsPlural',
-          'leaderTitle', 'jobString', 'quotation', 'beginLetterLabel', 'beginLetter', 'recoveryMessage', 'baseInspectLine',
-          'graphLabelY', 'fixedName', 'letterLabel', 'letterText', 'letterLabelEnemy', 'arrivalTextEnemy',
-          'letterLabelFriendly', 'arrivalTextFriendly', 'Description', 'endMessage', 'successfullyRemovedHediffMessage']
-nestedstartlabels = ['injuryProps']
-nestedlabels = ['destroyedLabel', 'destroyedOutLabel']
+labels = ['label', 'labelMechanoids', 'labelMale', 'labelFemale', 'labelShort', 'skillLabel', 'text',
+          'rejectInputMessage', 'description', 'adjective', 'pawnLabel', 'gerundLabel', 'reportString', 'verb',
+          'gerund', 'deathMessage', 'pawnsPlural', 'leaderTitle', 'jobString', 'quotation', 'beginLetterLabel',
+          'beginLetter', 'recoveryMessage', 'baseInspectLine', 'graphLabelY', 'fixedName', 'letterLabel', 'letterText',
+          'letterLabelEnemy', 'arrivalTextEnemy', 'letterLabelFriendly', 'arrivalTextFriendly', 'Description',
+          'endMessage', 'successfullyRemovedHediffMessage', 'helpText']
+nestedstartlabels = ['injuryProps', 'scenario']
+nestedlabels = ['destroyedLabel', 'destroyedOutLabel', 'summary']
 liststartlabels = ['helpTexts', 'comps', 'stages', 'degreeDatas', 'rulePack', 'lifeStages', 'scoreStages', 'verbs',
                    'hediffGivers', 'logRulesInitiator', 'logRulesRecipient', 'parts']
 nestedliststartlabels = ['rulesStrings']
@@ -241,7 +242,6 @@ for dirpath, dirnames, filenames in os.walk(defsDirPath):
                         else:
                             leatherLabel = labelElement.text + ' leather'
                         extraLabelList = [('label', leatherLabel),
-                                               ('description', 'Leather made from the skin of a ' + labelElement.text + '.'),
                                                ('stuffProps.stuffAdjective', leatherLabel)]
                         extraDefList.append((defName + '_Leather', extraLabelList))
                     if defName not in ['Mechanoid_Centipede', 'Mechanoid_Scyther']:
@@ -249,8 +249,7 @@ for dirpath, dirnames, filenames in os.walk(defsDirPath):
                             meatLabel = child.find('race').find('meatLabel').text
                         else:
                             meatLabel = labelElement.text + ' meat'
-                        extraLabelList = [('label', meatLabel),
-                                               ('description', 'Raw flesh of a ' + labelElement.text + '.')]
+                        extraLabelList = [('label', meatLabel)]
                         extraDefList.append((defName + '_Meat', extraLabelList))
                     extraLabelList = [('label', labelElement.text + ' corpse'),
                                            ('description', 'Dead body of a ' + labelElement.text + '.')]
