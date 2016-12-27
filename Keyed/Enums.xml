@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <!-- glow -->
   <Dark>Dark</Dark>
   <Lit>Lit</Lit>
   <LitBrightly>Brightly lit</LitBrightly>
-  
+
   <!-- history upload pref -->
   <Unspecified>Undecided</Unspecified>
   <Always>Allow</Always>
   <Never>Do not allow</Never>
-  
+
   <!-- Price types -->
   <PriceTypeVeryCheap>very cheap</PriceTypeVeryCheap>
   <PriceTypeCheap>cheap</PriceTypeCheap>
@@ -30,7 +30,7 @@
   <FoodTypeFlags_VegetableOrFruit>vegetables</FoodTypeFlags_VegetableOrFruit>
   <FoodTypeFlags_Meat>raw meat</FoodTypeFlags_Meat>
   <FoodTypeFlags_Corpse>corpses</FoodTypeFlags_Corpse>
-  <FoodTypeFlags_Seeds>seeds</FoodTypeFlags_Seeds>
+  <FoodTypeFlags_Seed>seeds</FoodTypeFlags_Seed>
   <FoodTypeFlags_AnimalProduct>animal products</FoodTypeFlags_AnimalProduct>
   <FoodTypeFlags_Plant>live plants</FoodTypeFlags_Plant>
   <FoodTypeFlags_Tree>live trees</FoodTypeFlags_Tree>
@@ -58,7 +58,7 @@
   <QualityCategoryShort_Excellent>exc</QualityCategoryShort_Excellent>
   <QualityCategoryShort_Masterwork>mast</QualityCategoryShort_Masterwork>
   <QualityCategoryShort_Legendary>legd</QualityCategoryShort_Legendary>
-  
+
   <!-- Hunger -->
   <HungerLevel_Starving>Starving</HungerLevel_Starving>
   <HungerLevel_UrgentlyHungry>Urgently hungry</HungerLevel_UrgentlyHungry>
@@ -76,7 +76,8 @@
   <Hilliness_SmallHills>small hills</Hilliness_SmallHills>
   <Hilliness_LargeHills>large hills</Hilliness_LargeHills>
   <Hilliness_Mountainous>mountainous</Hilliness_Mountainous>
-  
+  <Hilliness_Impassable>impassable</Hilliness_Impassable>
+
   <!-- Steam workshop interaction -->
   <WorkshopInteractStage_CreatingItem>Creating</WorkshopInteractStage_CreatingItem>
   <WorkshopInteractStage_SubmittingItem>Submitting</WorkshopInteractStage_SubmittingItem>
@@ -90,7 +91,7 @@
   <!-- Mod sources -->
   <ContentSource_LocalFolder>local folder</ContentSource_LocalFolder>
   <ContentSource_SteamWorkshop>Steam Workshop</ContentSource_SteamWorkshop>
-  
+
   <!-- Trainable intelligence -->
   <TrainableIntelligence_None>none</TrainableIntelligence_None>
   <TrainableIntelligence_Simple>simple</TrainableIntelligence_Simple>
@@ -108,7 +109,7 @@
   <HostilityResponseMode_Ignore>Ignore</HostilityResponseMode_Ignore>
   <HostilityResponseMode_Attack>Attack</HostilityResponseMode_Attack>
   <HostilityResponseMode_Flee>Flee</HostilityResponseMode_Flee>
-  
+
   <!-- HediffGrowthMode -->
   <HediffGrowthMode_Growing>growing</HediffGrowthMode_Growing>
   <HediffGrowthMode_Stable>stable</HediffGrowthMode_Stable>
@@ -131,19 +132,25 @@
   <PawnGenerationContext_All>all characters</PawnGenerationContext_All>
   <PawnGenerationContext_PlayerStarter>player starting characters</PawnGenerationContext_PlayerStarter>
   <PawnGenerationContext_NonPlayer>non-player characters</PawnGenerationContext_NonPlayer>
-  
+
   <!-- Animal name display mode -->
   <ShowAnimalNames>Show animal names</ShowAnimalNames>
   <AnimalNameDisplayMode_TameNamed>Tame (named only)</AnimalNameDisplayMode_TameNamed>
   <AnimalNameDisplayMode_TameAll>Tame (all)</AnimalNameDisplayMode_TameAll>
-  
+
   <!-- Temperature -->
   <Celsius>Celsius</Celsius>
   <Fahrenheit>Fahrenheit</Fahrenheit>
   <Kelvin>Kelvin</Kelvin>
-  
-  <!-- Spoil reason -->
-  <SpoilReason_Freezing>Spoiled by freezing.</SpoilReason_Freezing>
-  <SpoilReason_HighTemperature>Spoiled by high temperature.</SpoilReason_HighTemperature>
-  
+
+  <!-- Direction8Way -->
+  <Direction8Way_North_Short>N</Direction8Way_North_Short>
+  <Direction8Way_NorthEast_Short>NE</Direction8Way_NorthEast_Short>
+  <Direction8Way_East_Short>E</Direction8Way_East_Short>
+  <Direction8Way_SouthEast_Short>SE</Direction8Way_SouthEast_Short>
+  <Direction8Way_South_Short>S</Direction8Way_South_Short>
+  <Direction8Way_SouthWest_Short>SW</Direction8Way_SouthWest_Short>
+  <Direction8Way_West_Short>W</Direction8Way_West_Short>
+  <Direction8Way_NorthWest_Short>NW</Direction8Way_NorthWest_Short>
+
 </LanguageData>

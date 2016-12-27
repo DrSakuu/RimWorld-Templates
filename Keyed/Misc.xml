@@ -1,14 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <Autosaving>Autosaving</Autosaving>
-  
   <GameStartDialog>The three of you awake in your cryptosleep sarcophagi to the sound of sirens and ripping metal. You barely get to the escape pods before the ship is torn apart.\n\nSome time later, you land on this unknown rimworld.\n\nAs pieces of the shredded starship fall around you, you start making plans to survive.</GameStartDialog>
-
   <Colony>Colony</Colony>
-  
   <ChangeLanguageFromMainMenu>You can only change language from the options screen on the main menu.</ChangeLanguageFromMainMenu>
-
   <AndLower>and</AndLower>
   <DisabledLower>disabled</DisabledLower>
 
@@ -33,15 +29,15 @@
   <repeat>repeat</repeat>
 
   <!-- Content generation-->
-  
-	<MeatLabel>{0} meat</MeatLabel>
+
+  <MeatLabel>{0} meat</MeatLabel>
   <MeatDesc>Raw butchered flesh. Can be cooked into meals, or eaten raw.</MeatDesc>
 
   <LeatherLabel>{0} leather</LeatherLabel>
   <LeatherDesc>Tanned, dried, scraped skin. A good traditional material for making clothes and bags.</LeatherDesc>
 
   <CorpseLabel>{0} corpse</CorpseLabel>
-	<CorpseDesc>Dead body of a {0}.</CorpseDesc>
+  <CorpseDesc>Dead body of a {0}.</CorpseDesc>
   <DeadLabel>{0} (dead)</DeadLabel>
 
   <RoughStoneTerrainLabel>rough {0}</RoughStoneTerrainLabel>
@@ -61,12 +57,17 @@
 
   <SomeonesRoom>{0}'s {1}</SomeonesRoom>
   <CouplesRoom>{0} and {1}'s {2}</CouplesRoom>
-  
+
   <VariousLabel>(various)</VariousLabel>
 
   <!-- History events -->
   <ColonistDied>Colonist died</ColonistDied>
-  
-  
-  
+
+  <!-- Rotation -->
+  <North>North</North>
+  <South>South</South>
+  <West>West</West>
+  <East>East</East>
+
+
 </LanguageData>

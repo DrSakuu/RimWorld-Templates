@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <LetterLabelAnimalInsanitySingle>Mad animal</LetterLabelAnimalInsanitySingle>
@@ -55,7 +55,7 @@
 
   <LetterLabelManhunterPackArrived>Manhunter pack</LetterLabelManhunterPackArrived>
   <ManhunterPackArrived>A pack of man-hunting {0}s have entered the area. They will roam the region, hunting for humanoid flesh.\n\nThey can't pass doors, so if you stay behind walls you should be safe. They won't attack inactive turrets, so turn your turrets off if you want to save them.\n\nThey'll leave the area in a few days.</ManhunterPackArrived>
-  
+
   <!-- Crashed ship part-->
   <MessageAnimalInsanityPulse>The ancient structure has emitted a psychic pulse that has driven nearby animals mad.</MessageAnimalInsanityPulse>
   <LetterShipPartDroveColonistInsane>The crashed ship part has emitted a focused psychic pulse that has driven colonist {0} insane.</LetterShipPartDroveColonistInsane>
@@ -67,7 +67,7 @@
   <PsychicDroneLevelExtreme>Extreme</PsychicDroneLevelExtreme>
   <LetterLabelPsychicDroneLevelIncreased>Drone intensifies</LetterLabelPsychicDroneLevelIncreased>
   <LetterPsychicDroneLevelIncreased>The crashed ship part is now emanating a more powerful kind of psychic drone. Every humanlike in the area now feels more disturbed, terrified, and paranoid.</LetterPsychicDroneLevelIncreased>
-  
+
   <!-- Agent revealed -->
   <LetterLabelAgentRevealed>Agent</LetterLabelAgentRevealed>
   <LetterAgentRevealed>{0} has been revealed as an agent of your enemy {1}.\n\nThey are attempting to escape now.</LetterAgentRevealed>
@@ -82,7 +82,7 @@
   <!-- Beavers -->
   <LetterLabelBeaversArrived>Beavers!</LetterLabelBeaversArrived>
   <BeaversArrived>A group of hungry alphabeavers has just arrived.\n\nTry to eliminate them before they decimate every last tree in the region.</BeaversArrived>
-  
+
   <!-- Refugee chased -->
   <RefugeeChasedInitial>A {1} named {0} calls you from nearby. HECAP is being chased by {2} from {3}!\n\nHECAP begs for safety and offers to join your colony. Biologically, HE is {4} years old.\n\nBe warned - if you accept, you'll have to fight off the {2} on HIS tail.</RefugeeChasedInitial>
   <RefugeeChasedInitial_Accept>Offer safety</RefugeeChasedInitial_Accept>
@@ -98,22 +98,31 @@
   <!-- Farm animals wander in -->
   <LetterLabelFarmAnimalsWanderIn>{0}s join</LetterLabelFarmAnimalsWanderIn>
   <LetterFarmAnimalsWanderIn>A group of {0}s, abandoned or lost, have wandered into the area.\n\nThey seem accustomed to human contact and are joining the colony.</LetterFarmAnimalsWanderIn>
-  
+
   <!-- Thrumbo passes -->
   <LetterLabelThrumboPasses>Rare thrumbos</LetterLabelThrumboPasses>
   <LetterThrumboPasses>A small herd of thrumbos have wandered into the area.\n\nPeaceful by nature, these rare creatures are extremely dangerous when confronted. Some traders are willing to pay a lot of money for their precious leather and horn.\n\nThrumbos will leave the area in a few days.</LetterThrumboPasses>
-  
+
   <!-- Trader caravan -->
   <LetterLabelTraderCaravanArrival>{1} from {0}</LetterLabelTraderCaravanArrival>
   <LetterTraderCaravanArrival>A caravan from {0} is approaching. They are a {1}.\n\nThey will hang around the colony for a few days before leaving. You can attack them - but this will anger their faction!</LetterTraderCaravanArrival>
-  
+
   <!-- Building breaks down -->
   <LetterLabelBuildingBrokenDown>Breakdown: {0}</LetterLabelBuildingBrokenDown>
   <LetterBuildingBrokenDown>One of your machines ({0}) has broken down. It won't work until a colonist with the Repair work type goes and fixes it.</LetterBuildingBrokenDown>
-  
+
   <!-- Ransom demand -->
   <RansomDemand>{1} contacts you on radio. They are holding former colonist {0} for ransom.\n\nThey're willing to release HIM back to you in exchange for {2} silver.</RansomDemand>
   <RansomDemand_Accept>Accept</RansomDemand_Accept>
   <RansomDemand_Reject>Reject</RansomDemand_Reject>
-  
+
+  <!-- Journey -->
+  <JourneyOffer>A friendly AI from your past named Charlon Whitestone has sent you a message!\n\nHe reveals that he has a starship hidden on this planet, and sends you its world coordinates.\n\nIf you travel to the ship, Charlon will take you off this rim world, to the stars.</JourneyOffer>
+
+  <!-- Caravan meeting -->
+  <CaravanMeeting>Your caravan has met peacefully with a caravan from {0}. The other caravan is composed of:\n\n{1}</CaravanMeeting>
+  <CaravanMeeting_Trade>Trade</CaravanMeeting_Trade>
+  <CaravanMeeting_Attack>Attack</CaravanMeeting_Attack>
+  <CaravanMeeting_MoveOn>Move on</CaravanMeeting_MoveOn>
+
 </LanguageData>

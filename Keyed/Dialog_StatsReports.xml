@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <StatsReport_BaseValue>Base value</StatsReport_BaseValue>
@@ -12,6 +12,7 @@
   <StatsReport_OtherStats>Other stat factors</StatsReport_OtherStats>
   <StatsReport_HealthFactors>Health factors</StatsReport_HealthFactors>
   <HealthFactorPercentImpact>{0} importance</HealthFactorPercentImpact>
+  <HealthFactorMaxImpact>{0} max</HealthFactorMaxImpact>
   <StatsReport_PostProcessed>Post-processed curved</StatsReport_PostProcessed>
   <StatsReport_FinalValue>Final value</StatsReport_FinalValue>
   <StatsReport_MarketValueFromStuffsAndWork>Base market value calculated is from construction materials and work amount.</StatsReport_MarketValueFromStuffsAndWork>
@@ -19,7 +20,7 @@
   <StatsReport_AgeMultiplier>Multiplier for age {0}</StatsReport_AgeMultiplier>
   <StatsReport_HealthMultiplier>Multiplier for health {0}</StatsReport_HealthMultiplier>
   <StatsReport_MoodMultiplier>Multiplier for mood {0}</StatsReport_MoodMultiplier>
-	<StatsReport_DifficultyMultiplier>Multiplier for difficulty {0}</StatsReport_DifficultyMultiplier>
+  <StatsReport_DifficultyMultiplier>Multiplier for difficulty {0}</StatsReport_DifficultyMultiplier>
   <StatsReport_InBed>In bed</StatsReport_InBed>
   <StatsReport_Facilities>Facilities</StatsReport_Facilities>
   <StatsReport_BodySize>Multiplier for body size {0}</StatsReport_BodySize>
@@ -30,8 +31,9 @@
   <StatsReport_CooldownFormat>{0} s</StatsReport_CooldownFormat>
   <StatsReport_LifeExpectancy>Life expectancy</StatsReport_LifeExpectancy>
   <StatsReport_MissingBodyParts>Multiplier for missing body parts</StatsReport_MissingBodyParts>
+  <StatsReport_GearAndInventoryMass>Gear and inventory mass</StatsReport_GearAndInventoryMass>
+  <StatsReport_WornByCorpse>Multiplier for worn by corpse</StatsReport_WornByCorpse>
   <AverageOfAllAttacks>average of all attacks</AverageOfAllAttacks>
-  <StatsReport_UnpoweredWorkTable>No power</StatsReport_UnpoweredWorkTable>
   <StatsReport_ScenarioFactor>Scenario</StatsReport_ScenarioFactor>
-  
+
 </LanguageData>

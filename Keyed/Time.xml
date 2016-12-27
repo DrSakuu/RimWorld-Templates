@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <LetterDay>d</LetterDay>
   <LetterHour>h</LetterHour>
   <LetterMinute>m</LetterMinute>
   <LetterSecond>s</LetterSecond>
-  
+
   <DaysLower>days</DaysLower>
   <SecondsLower>seconds</SecondsLower>
 
@@ -19,7 +19,7 @@
   <AgeBiological>Biological age: {0} years, {1} seasons, {2} days</AgeBiological>
 
   <!-- Date periods -->
-	<Period1Year>1 year</Period1Year>
+  <Period1Year>1 year</Period1Year>
   <PeriodYears>{0} years</PeriodYears>
   <Period1Season>1 season</Period1Season>
   <PeriodSeasons>{0} seasons</PeriodSeasons>
@@ -32,5 +32,5 @@
   <Started>Started</Started>
   <Lasted>Lasted</Lasted>
   <OccurredTimeAgo>occurred {0} ago</OccurredTimeAgo>
-  
+
 </LanguageData>
