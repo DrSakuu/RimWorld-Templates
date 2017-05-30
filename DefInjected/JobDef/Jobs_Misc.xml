@@ -7,6 +7,7 @@
   <GotoSafeTemperature.reportString>seeking safe temperature.</GotoSafeTemperature.reportString>
   <GotoWander.reportString>wandering.</GotoWander.reportString>
   <Wait.reportString>standing.</Wait.reportString>
+  <WaitMaintainPosture.reportString>standing.</WaitMaintainPosture.reportString>
   <WaitDowned.reportString>downed.</WaitDowned.reportString>
   <WaitSafeTemperature.reportString>waiting in safe temperature.</WaitSafeTemperature.reportString>
   <WaitWander.reportString>wandering.</WaitWander.reportString>
@@ -14,6 +15,7 @@
   <AttackStatic.reportString>attacking TargetA.</AttackStatic.reportString>
   <AttackMelee.reportString>melee attacking TargetA.</AttackMelee.reportString>
   <SocialFight.reportString>fighting with TargetA.</SocialFight.reportString>
+  <UseVerbOnThing.reportString>Doing something.</UseVerbOnThing.reportString>
   <Equip.reportString>equipping TargetA.</Equip.reportString>
   <TakeInventory.reportString>taking TargetA.</TakeInventory.reportString>
   <GiveToPackAnimal.reportString>taking TargetA.</GiveToPackAnimal.reportString>
@@ -37,6 +39,7 @@
   <Vomit.reportString>vomiting.</Vomit.reportString>
   <Flick.reportString>flicking switch.</Flick.reportString>
   <TradeWithPawn.reportString>trading with TargetA.</TradeWithPawn.reportString>
+  <Flee.reportString>fleeing.</Flee.reportString>
   <FleeAndCower.reportString>fleeing.</FleeAndCower.reportString>
   <EnterTransporter.reportString>entering TargetA.</EnterTransporter.reportString>
 

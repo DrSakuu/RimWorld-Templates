@@ -1,19 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- Unlandable biomes -->
-
-  <Ocean.label>ocean</Ocean.label>
-  <Ocean.description>Open ocean. Great for fish - not so great for you.</Ocean.description>
-
-
-  <!-- Buildable biomes -->
-
   <TemperateForest.label>temperate forest</TemperateForest.label>
   <TemperateForest.description>Forests of deciduous trees interspersed with fertile clearings. Many species of animals move around in the trees and on the plains. Because of snow, it is slow to travel in winter.</TemperateForest.description>
 
   <TropicalRainforest.label>tropical rainforest</TropicalRainforest.label>
-  <TropicalRainforest.description>A thick, moist jungle. Dense overgrowth and aggressive wildlife make construction and survival difficult. Disease is a constant threat here.</TropicalRainforest.description>
+  <TropicalRainforest.description>A thick, moist jungle. Despite its visual beauty, this is a very dangerous biome. Choking overgrowth, aggressive animals, and constant disease are why some explorers call this the "green hell".</TropicalRainforest.description>
 
 
 </LanguageData>

@@ -14,8 +14,8 @@ def print_help():
     """
     print("RimWorld Translation Upgrader script")
     print("Compares a translation to the templates and adds missing tags and removes obsolete tags.")
-    print("Usage: RimWorld_TranslationUpgrader.py <Directory> <Output>, where <Directory> is the translation to upgrade"
-          "and <Output> is the output folder.")
+    print("Usage: RimWorld_TranslationUpgrader.py <Directory> <Output>, where <Directory> is the translation to "
+          "upgrade and <Output> is the output folder.")
 
 
 # Save the arguments
