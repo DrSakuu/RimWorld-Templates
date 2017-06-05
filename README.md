@@ -1,7 +1,7 @@
 RimWorld-Templates
 ==================
 
-A list of translate-ready files in the correct syntax and some additional scripts. Files are taken from taken from [RimWorld-English](https://github.com/RimWorld-zh/RimWorld-English). For upgrading an existing translation, [RimTrans](https://github.com/duduluu/RimTrans) is recommended.
+A list of translate-ready files in the correct syntax and some additional scripts. Files are taken from [RimWorld-English](https://github.com/RimWorld-zh/RimWorld-English). For upgrading an existing translation, [RimTrans](https://github.com/duduluu/RimTrans) is recommended.
 
 **Updated for alpha 17!**
 
